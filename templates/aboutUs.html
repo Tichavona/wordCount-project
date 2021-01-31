@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Word Count</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      *
+      {
+      	margin: 5px;
+      	padding: 0;
+      }
+
+      /*------NAVIGATION--------*/
+      #nav-bar
+      {
+      	position: sticky;
+      	top: 0;
+      	z-index: 10;
+      }
+
+      .navbar-brand img
+      {
+      	height: 40px;
+      	padding-left: 30px;
+      }
+
+      .navbar-nav li
+      {
+      	padding: 0 10px;
+      }
+
+      .navbar-nav li a
+      {
+      	float: right;
+      	text-align: left;
+      }
+
+      #nav-bar ul li a:hover
+      {
+      	color: #007bff!important;
+      }
+
+      .navbar
+      {
+      	background: #fff;
+      }
+
+      .navbar-toggler
+      {
+      	border: none!important;
+      }
+
+      .nav-link
+      {
+      	color: #555!important;
+      	font-weight: 600;
+      	font-size: 16px;
+      }
+      /*----------About-----------*/
+
+      #about
+      {
+      	padding-top: 50px;
+      	padding-bottom: 50px;
+      	color: #555;
+      }
+
+      #about .btn
+      {
+      	margin-top: 20px;
+      	margin-bottom: 30px;
+      }
+
+      .about-content
+      {
+      	padding: 20px 20px 20px 0px;
+      }
+
+      .pro-bar p
+      {
+      	margin-bottom: 6px;
+      	font-weight: 600
+      }
+
+      .progress-bar
+      {
+      	border-radius: 16px;
+      }
+
+      .progress
+      {
+      	border-radius: 16px !important;
+      	margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-----Navigation----->
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><img src="image/logo.jpg"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'home'%}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'aboutUs'%}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </section>
+    <!--------About Section---------->
+    <section id="about">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6">
+    				<h2>About Us</h2>
+    				<div class="about-content">
+    					This is where information about the company is put for customer to familiarise with the organisation and learn more about this great institution for great hospitality. The marketing team has to come up with frenzy catch message to be inserted here. Otherwise my job as developer is done in creating this web template that has the option to put the "About us" section. Thank you very much for reading through this passage.
+    				</div>
+    				<button type="button" class="btn btn-primary"> Read more >> </button>
+    			</div>
+    			<div class="col-md-6 pro-bar">
+    				<p>Reservations</p>
+    				<div class="progress">
+    					<div class="progress-bar" style="width: 80%">80%</div>
+    				</div>
+    				<p>Dinner</p>
+    				<div class="progress">
+    					<div class="progress-bar" style="width: 70%">70%</div>
+    				</div>
+    				<p>Activities</p>
+    				<div class="progress">
+    					<div class="progress-bar" style="width: 60%">60%</div>
+    				</div>
+    				<p>Zvimwevo</p>
+    				<div class="progress">
+    					<div class="progress-bar" style="width: 50%">50%</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+  </body>
+</html>
